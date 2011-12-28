@@ -20,11 +20,11 @@ public class Splash extends Activity {
 			@Override
 			public void run() {
 				try {
-					sleep(14000);
+					sleep(17000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				} finally {
-					Intent openStartingPoint = new Intent("com.kritsolutions.travis.STARTINGPOINT");
+					Intent openStartingPoint = new Intent("com.kritsolutions.travis.MENU");
 					startActivity(openStartingPoint);
 				}
 			}
