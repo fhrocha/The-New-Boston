@@ -15,26 +15,20 @@ public final class R {
         public static final int splash_background=0x7f020001;
     }
     public static final class id {
-        public static final int analogClock1=0x7f06000d;
-        public static final int bAdd=0x7f06000f;
-        public static final int bResults=0x7f060012;
-        public static final int bSub=0x7f060010;
-        public static final int button1=0x7f06000c;
-        public static final int editText1=0x7f060001;
-        public static final int editText2=0x7f060003;
-        public static final int editText3=0x7f060005;
-        public static final int editText4=0x7f060007;
-        public static final int editText5=0x7f060009;
-        public static final int editText6=0x7f06000b;
-        public static final int etCommands=0x7f060011;
-        public static final int tbPassword=0x7f060013;
-        public static final int textView1=0x7f060000;
-        public static final int textView2=0x7f060002;
-        public static final int textView3=0x7f060004;
-        public static final int textView4=0x7f060006;
-        public static final int textView5=0x7f060008;
-        public static final int textView6=0x7f06000a;
-        public static final int tvDisplay=0x7f06000e;
+        public static final int analogClock1=0x7f060007;
+        public static final int bAdd=0x7f060009;
+        public static final int bResults=0x7f06000c;
+        public static final int bSentEmail=0x7f060006;
+        public static final int bSub=0x7f06000a;
+        public static final int etAction=0x7f060004;
+        public static final int etCommands=0x7f06000b;
+        public static final int etEmails=0x7f060000;
+        public static final int etIntro=0x7f060001;
+        public static final int etName=0x7f060002;
+        public static final int etOutro=0x7f060005;
+        public static final int etThings=0x7f060003;
+        public static final int tbPassword=0x7f06000d;
+        public static final int tvDisplay=0x7f060008;
     }
     public static final class layout {
         public static final int email=0x7f030000;
