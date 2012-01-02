@@ -33,6 +33,10 @@
         <activity
             android:label="@string/app_name" android:name=".TextPlay" >
         </activity>
+        
+        <activity
+            android:label="@string/app_name" android:name=".Email" >
+        </activity>
     </application>
 
 </manifest>
