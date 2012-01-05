@@ -8,21 +8,21 @@
         android:id="@+id/ivReturnedPicture"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@drawable/ic_launcher"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher" />
 
     <ImageButton
         android:id="@+id/ibTakePicture"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:src="@drawable/camera_mini" />
 
     <Button
         android:id="@+id/bSetWallPaper"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:text="Set Wallpaper"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:text="Set Wallpaper" />
 
 </LinearLayout>

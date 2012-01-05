@@ -34,6 +34,7 @@ public class Camera extends Activity implements View.OnClickListener {
 	private void initialize() {
 		
 		imageView = (ImageView) findViewById(R.id.ivReturnedPicture);
+		
 		imageButton = (ImageButton) findViewById(R.id.ibTakePicture);
 		imageButton.setOnClickListener(this);
 		
@@ -69,7 +70,5 @@ public class Camera extends Activity implements View.OnClickListener {
 			bitmap = (Bitmap)extras.get("data");
 			imageView.setImageBitmap(bitmap);
 		}
-	}
-	
-	
+	}	
 }

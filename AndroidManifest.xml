@@ -7,7 +7,7 @@
     <uses-sdk android:minSdkVersion="8" />
     <uses-permission android:name="android.permission.SET_WALLPAPER"/>
 
-    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" >
+    <application android:icon="@drawable/dot_mac_logo" android:label="@string/app_name" >
         <activity android:label="@string/app_name" android:name=".Splash" >
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
@@ -36,11 +36,21 @@
         </activity>
         
         <activity
-            android:label="@string/app_name" android:name=".Email" >
+            android:label="@string/app_name" android:name=".Email" 
+            android:screenOrientation="portrait">
         </activity>
         
         <activity
-            android:label="@string/app_name" android:name=".Camera" >
+            android:label="Camera Application" android:name=".Camera" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:label="Data Application" android:name=".Data" >
+        </activity>
+        
+        <activity
+            android:label="OpenedClass Application" android:name=".OpenedClass" >
         </activity>
     </application>
 
