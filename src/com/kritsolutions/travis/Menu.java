@@ -48,9 +48,13 @@ public class Menu extends ListActivity {
 			startActivity(intent);
 			break;
 		case R.id.preferences:
-			
+			Intent intent2 = new Intent("com.kritsolutions.travis.PREFS");
+			startActivity(intent2);
+			break;			
+		case R.id.exit:
+			finish();
 			break;
-		}
+		} 
 		return false;
 	}
 

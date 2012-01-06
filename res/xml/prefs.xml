@@ -2,12 +2,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <EditTextPreference
-        android:title="EditText"
+        android:title="Set Your Name"
         android:key="name"
-        android:summary="Enter your name"/>
+        android:summary="Enter Your Name"/>
     
     <CheckBoxPreference 
-        android:title="CheckBox"
+        android:title="Play Music on Start"
         android:defaultValue="true"
         android:key="checkBox"
         android:summary="Check this box"/>

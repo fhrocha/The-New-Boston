@@ -2,7 +2,9 @@ package com.kritsolutions.travis;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -23,6 +25,13 @@ public class OpenedClass extends Activity implements OnClickListener, OnCheckedC
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.send);
 		initialize();
+		
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		String et = prefs.getString("name", "Travis is...");
+		String values = prefs.getString("list", "4");
+		if("Item 1".equals(values)) {
+			question.setText(et);
+		}
 		//Bundle gotBasket = getIntent().getExtras();
 		//gotBread = gotBasket.getString("key");
 		//question.setText(gotBread);

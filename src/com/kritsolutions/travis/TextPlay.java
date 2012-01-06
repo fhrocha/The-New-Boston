@@ -4,12 +4,10 @@ import java.util.Random;
 
 import android.app.Activity;
 import android.graphics.Color;
-import android.hardware.Camera.Size;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.Gravity;
 import android.view.View;
-import android.webkit.WebSettings.TextSize;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;

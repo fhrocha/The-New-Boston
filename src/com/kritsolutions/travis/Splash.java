@@ -2,8 +2,10 @@ package com.kritsolutions.travis;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 
 public class Splash extends Activity {
 	
@@ -15,12 +17,15 @@ public class Splash extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.splash);
 		this.ourSong = MediaPlayer.create(Splash.this, R.raw.splashsound);
-		this.ourSong.start();
+		SharedPreferences getPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		if(playMusic(getPrefs)) {
+			this.ourSong.start();
+		}
 		Thread timer = new Thread() {
 			@Override
 			public void run() {
 				try {
-					sleep(1000);
+					sleep(4000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				} finally {
@@ -30,6 +35,10 @@ public class Splash extends Activity {
 			}
 		};
 		timer.start();
+	}
+
+	private boolean playMusic(SharedPreferences getPrefs) {
+		return getPrefs.getBoolean("checkBox", true);
 	}
 
 	@Override
