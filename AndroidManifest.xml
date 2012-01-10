@@ -69,6 +69,10 @@
         <activity
             android:label="OpenedClass Application" android:name=".OpenedClass" >
         </activity>
+        
+        <activity
+            android:label="Data Application" android:name=".Gfx" >
+        </activity>
     </application>
 
 </manifest>
