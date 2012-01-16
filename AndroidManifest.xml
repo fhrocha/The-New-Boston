@@ -73,6 +73,10 @@
         <activity
             android:label="Data Application" android:name=".Gfx" >
         </activity>
+        
+        <activity
+            android:label="Data Application" android:name=".GfxSurface" >
+        </activity>
     </application>
 
 </manifest>
