@@ -99,6 +99,10 @@
         <activity
             android:label="Flipper" android:name=".Flipper" >
         </activity>
+        
+        <activity
+            android:label="SharedPrefs" android:name=".SharedPrefs" >
+        </activity>
     </application>
 
 </manifest>
