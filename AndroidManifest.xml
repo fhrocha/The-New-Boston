@@ -95,6 +95,10 @@
         <activity
             android:label="SimpleBrowser" android:name=".SimpleBrowser" >
         </activity>
+        
+        <activity
+            android:label="Flipper" android:name=".Flipper" >
+        </activity>
     </application>
 
 </manifest>
