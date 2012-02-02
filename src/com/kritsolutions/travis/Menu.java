@@ -17,7 +17,7 @@ public class Menu extends ListActivity {
 						"Camera", "Data", "OpenedClass", "Gfx", 
 						"GfxSurface", "SoundStuff", "Slider", "Tabs",
 						"SimpleBrowser", "Flipper", "SharedPrefs",
-						"InternalData"};
+						"InternalData", "ExternalData"};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
