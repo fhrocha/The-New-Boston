@@ -16,7 +16,8 @@ public class Menu extends ListActivity {
 	String[] classes = {"startingPoint", "TextPlay", "Email", 
 						"Camera", "Data", "OpenedClass", "Gfx", 
 						"GfxSurface", "SoundStuff", "Slider", "Tabs",
-						"SimpleBrowser", "Flipper", "SharedPrefs"};
+						"SimpleBrowser", "Flipper", "SharedPrefs",
+						"InternalData"};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class Menu extends ListActivity {
 		super.onListItemClick(l, v, position, id);
 		String clazz = classes[position];
 		try {
-			Class ourClass = Class.forName("com.kritsolutions.travis." + clazz);
+			Class<?> ourClass = Class.forName("com.kritsolutions.travis." + clazz);
 			Intent ourIntent = new Intent(Menu.this, ourClass);
 			startActivity(ourIntent);
 		} catch (ClassNotFoundException e) {

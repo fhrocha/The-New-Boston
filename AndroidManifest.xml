@@ -103,6 +103,10 @@
         <activity
             android:label="SharedPrefs" android:name=".SharedPrefs" >
         </activity>
+        
+        <activity
+            android:label="InternalData" android:name=".InternalData" >
+        </activity>
     </application>
 
 </manifest>
