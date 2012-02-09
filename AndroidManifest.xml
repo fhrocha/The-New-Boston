@@ -112,6 +112,18 @@
         <activity
             android:label="ExternalData" android:name=".ExternalData" >
         </activity>
+        
+        <activity
+            android:label="SQLiteExample" android:name=".SQLiteExample" >
+        </activity>
+        
+        <activity
+            android:label="@string/app_name" android:name=".SQLView" >
+            <intent-filter >
+                <action android:name="com.kritsolutions.travis.SQLVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
