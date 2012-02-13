@@ -50,6 +50,7 @@ public class HotOrNot {
 	}
 
 	public HotOrNot open() throws SQLException {
+		
 		ourHelper = new DBHelper(ourContext);
 		ourDatabase = ourHelper.getWritableDatabase();
 		return this;
@@ -80,6 +81,41 @@ public class HotOrNot {
 		}
 		
 		return result.toString();
+	}
+
+	public String getName(long l) throws SQLException {
+		String[] columns = new String[]{KEY_ROWID, KEY_NAME, KEY_HOTNESS};
+		Cursor c = ourDatabase.query(DATABASE_TABLE, columns, KEY_ROWID + "=" + l, null, null, null, null);
+		if(c != null) {
+			c.moveToFirst();
+			String name = c.getString(1);
+			return name;
+		}
+		return null;
+	}
+
+	public String getHotness(long l) throws SQLException {
+		String[] columns = new String[]{KEY_ROWID, KEY_NAME, KEY_HOTNESS};
+		Cursor c = ourDatabase.query(DATABASE_TABLE, columns, KEY_ROWID + "=" + l, null, null, null, null);
+		if(c != null) {
+			c.moveToFirst();
+			String hotness = c.getString(2);
+			return hotness;
+		}
+		return null;
+	}
+
+	public void updateEntry(long lRow, String mName, String mHotness) throws SQLException {
+		
+		ContentValues cvUpdate = new ContentValues();
+		cvUpdate.put(KEY_NAME, mName);
+		cvUpdate.put(KEY_HOTNESS, mHotness);
+		ourDatabase.update(DATABASE_TABLE, cvUpdate, KEY_ROWID + "=" + lRow, null);
+	}
+
+	public void deleteEntry(long lRow1) throws SQLException {
+		
+		ourDatabase.delete(DATABASE_TABLE, KEY_ROWID + "=" + lRow1, null);		
 	}
 	
 }
