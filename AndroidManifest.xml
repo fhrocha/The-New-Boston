@@ -118,6 +118,10 @@
         </activity>
         
         <activity
+            android:label="Accelerate" android:name=".Accelerate" >
+        </activity>
+        
+        <activity
             android:label="@string/app_name" android:name=".SQLView" >
             <intent-filter >
                 <action android:name="com.kritsolutions.travis.SQLVIEW"/>
