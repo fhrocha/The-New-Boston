@@ -132,6 +132,10 @@
         <activity
             android:label="HttpExample" android:name=".HttpExample" >
         </activity>
+        
+        <activity
+            android:label="WeatherXMLParsing" android:name=".WeatherXMLParsing" >
+        </activity>
     </application>
 
 </manifest>
