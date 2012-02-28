@@ -136,6 +136,20 @@
         <activity
             android:label="WeatherXMLParsing" android:name=".WeatherXMLParsing" >
         </activity>
+        
+        <receiver android:name=".PointlessWidget" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>                
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_stuff"/>
+        </receiver>
+        
+        <activity android:name=".WidgetConfig" android:label="@string/app_name">
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

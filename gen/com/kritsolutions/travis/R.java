@@ -25,7 +25,7 @@ public final class R {
         public static final int splash_background=0x7f020007;
     }
     public static final class id {
-        public static final int aboutUs=0x7f090055;
+        public static final int aboutUs=0x7f09005a;
         public static final int analogClock1=0x7f090008;
         public static final int bAdd=0x7f090018;
         public static final int bAddTab=0x7f09004b;
@@ -52,8 +52,10 @@ public final class R {
         public static final int bStartWatch=0x7f090046;
         public static final int bStopWatch=0x7f090047;
         public static final int bSub=0x7f090019;
+        public static final int bWidgetOpen=0x7f090056;
         public static final int bgetInfo=0x7f09003e;
         public static final int button1=0x7f090011;
+        public static final int bwidgetconfig=0x7f090059;
         public static final int cbSlidable=0x7f090036;
         public static final int content=0x7f090034;
         public static final int etAction=0x7f090005;
@@ -72,7 +74,8 @@ public final class R {
         public static final int etState=0x7f090052;
         public static final int etThings=0x7f090004;
         public static final int etURL=0x7f090028;
-        public static final int exit=0x7f090057;
+        public static final int etwidgetconfig=0x7f090058;
+        public static final int exit=0x7f09005c;
         public static final int handle=0x7f090035;
         public static final int handle1=0x7f09002f;
         public static final int handle2=0x7f090030;
@@ -81,7 +84,7 @@ public final class R {
         public static final int ibTakePicture=0x7f09001b;
         public static final int ivReturnedPicture=0x7f09001a;
         public static final int linearLayout1=0x7f090044;
-        public static final int preferences=0x7f090056;
+        public static final int preferences=0x7f09005b;
         public static final int rBoth=0x7f090021;
         public static final int rCrazy=0x7f09001f;
         public static final int rSexy=0x7f090020;
@@ -101,6 +104,7 @@ public final class R {
         public static final int tvCanRead=0x7f09000a;
         public static final int tvCanWrite=0x7f090009;
         public static final int tvCity=0x7f09004f;
+        public static final int tvConfigInput=0x7f090055;
         public static final int tvCurrentWeather=0x7f090054;
         public static final int tvDisplay=0x7f090017;
         public static final int tvGot=0x7f090015;
@@ -111,6 +115,7 @@ public final class R {
         public static final int tvShowResults=0x7f090048;
         public static final int tvState=0x7f090051;
         public static final int tvText=0x7f090023;
+        public static final int tvWidgetUpdate=0x7f090057;
         public static final int viewFlipper1=0x7f090010;
         public static final int wvBrowser=0x7f09002e;
     }
@@ -133,6 +138,8 @@ public final class R {
         public static final int tabs=0x7f03000f;
         public static final int text=0x7f030010;
         public static final int weather=0x7f030011;
+        public static final int widget=0x7f030012;
+        public static final int widgetconfig=0x7f030013;
     }
     public static final class menu {
         public static final int cool_menu=0x7f080000;
@@ -148,5 +155,6 @@ public final class R {
     }
     public static final class xml {
         public static final int prefs=0x7f040000;
+        public static final int widget_stuff=0x7f040001;
     }
 }
