@@ -150,6 +150,10 @@
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
         </activity>
+        
+        <activity
+            android:label="@string/app_name" android:name=".GLExample" >
+        </activity>
     </application>
 
 </manifest>
