@@ -154,6 +154,10 @@
         <activity
             android:label="@string/app_name" android:name=".GLExample" >
         </activity>
+        
+        <activity
+            android:label="@string/app_name" android:name=".GLCubeEx" >
+        </activity>
     </application>
 
 </manifest>

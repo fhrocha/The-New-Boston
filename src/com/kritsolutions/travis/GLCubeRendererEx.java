@@ -5,13 +5,14 @@ import javax.microedition.khronos.opengles.GL10;
 
 import android.opengl.GLSurfaceView.Renderer;
 import android.opengl.GLU;
+import android.os.SystemClock;
 
-public class GLRendererEx implements Renderer {
+public class GLCubeRendererEx implements Renderer {
 	
-	private GLTriangleEx triangle;
+	private GLCube cube;
 	
-	public GLRendererEx() {
-		triangle = new GLTriangleEx();
+	public GLCubeRendererEx() {
+		cube = new GLCube();
 	}
 
 	public void onSurfaceCreated(GL10 gl, EGLConfig eglConfig) {
@@ -32,7 +33,12 @@ public class GLRendererEx implements Renderer {
 		gl.glLoadIdentity();
 		GLU.gluLookAt(gl, 0, 0, -5, 0, 0, 0, 0, 2, 0);
 		
-		triangle.draw(gl);
+		long time = SystemClock.uptimeMillis() % 4000L;
+		float angle = .090f * ((int)time);
+		
+		gl.glRotatef(angle, 1, 0, 2);
+
+		cube.draw(gl);
 	}
 
 	public void onSurfaceChanged(GL10 gl, int width, int height) {
@@ -41,7 +47,7 @@ public class GLRendererEx implements Renderer {
 		float ratio = (float) width / height;
 		gl.glMatrixMode(GL10.GL_PROJECTION);
 		gl.glLoadIdentity();
-		gl.glFrustumf(-ratio, ratio, -1, .5f, 1, 25);
+		gl.glFrustumf(-ratio, ratio, -1, 1, 1, 25);
 		
 	}
 
