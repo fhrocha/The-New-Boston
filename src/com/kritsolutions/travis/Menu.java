@@ -19,7 +19,7 @@ public class Menu extends ListActivity {
 						"SimpleBrowser", "Flipper", "SharedPrefs",
 						"InternalData", "ExternalData", "SQLiteExample",
 						"Accelerate", "HttpExample", "WeatherXMLParsing",
-						"GLExample", "GLCubeEx", "Voice"};
+						"GLExample", "GLCubeEx", "Voice", "TextVoice"};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

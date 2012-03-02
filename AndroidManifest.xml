@@ -163,6 +163,10 @@
         <activity
             android:label="@string/app_name" android:name=".Voice" >
         </activity>
+        
+        <activity
+            android:label="@string/app_name" android:name=".TextVoice" >
+        </activity>
     </application>
 
 </manifest>
