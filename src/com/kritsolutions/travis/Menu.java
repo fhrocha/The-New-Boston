@@ -20,7 +20,7 @@ public class Menu extends ListActivity {
 						"InternalData", "ExternalData", "SQLiteExample",
 						"Accelerate", "HttpExample", "WeatherXMLParsing",
 						"GLExample", "GLCubeEx", "Voice", "TextVoice",
-						"StatusBar"};
+						"StatusBar", "SeekBarVolume"};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

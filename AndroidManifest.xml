@@ -172,6 +172,10 @@
         <activity
             android:label="@string/app_name" android:name=".StatusBar" >
         </activity>
+        
+        <activity
+            android:label="@string/app_name" android:name=".SeekBarVolume" >
+        </activity>
     </application>
 
 </manifest>
