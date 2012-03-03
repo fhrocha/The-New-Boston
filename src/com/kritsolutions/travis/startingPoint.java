@@ -1,5 +1,8 @@
 package com.kritsolutions.travis;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +25,9 @@ public class startingPoint extends Activity {
         add = (Button)findViewById(R.id.bAdd);
         sub = (Button)findViewById(R.id.bSub);
         display = (TextView)findViewById(R.id.tvDisplay);
+        
+        AdView ad = (AdView)findViewById(R.id.ad);
+        ad.loadAd(new AdRequest());
         
         add.setOnClickListener(new View.OnClickListener() {
 			
