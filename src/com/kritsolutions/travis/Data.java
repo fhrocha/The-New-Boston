@@ -1,5 +1,9 @@
 package com.kritsolutions.travis;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class Data extends Activity implements OnClickListener {
@@ -14,12 +19,18 @@ public class Data extends Activity implements OnClickListener {
 	Button start, startFor;
 	EditText sendET;
 	TextView gotAnswer;
+	RelativeLayout rl;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.get);
 		initialize();
+		// Adding Ad from Java code
+		rl = (RelativeLayout) findViewById(R.id.relLayout);
+		AdView ad = new AdView(Data.this, AdSize.BANNER, "a14f517188026fa");
+		rl.addView(ad);
+		ad.loadAd(new AdRequest());
 	}
 
 	private void initialize() {

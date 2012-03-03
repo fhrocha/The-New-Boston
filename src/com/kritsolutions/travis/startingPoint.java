@@ -26,6 +26,7 @@ public class startingPoint extends Activity {
         sub = (Button)findViewById(R.id.bSub);
         display = (TextView)findViewById(R.id.tvDisplay);
         
+        // Refresh Ad
         AdView ad = (AdView)findViewById(R.id.ad);
         ad.loadAd(new AdRequest());
         
